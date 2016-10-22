@@ -2,7 +2,7 @@
 
 Name:           %{?scl_prefix}perl-Data-Dumper
 Version:        2.161
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Stringify perl data structures, suitable for printing and eval
 License:        GPL+ or Artistic
 Group:          Development/Libraries
@@ -77,6 +77,9 @@ find $RPM_BUILD_ROOT -type f -name '*.bs' -size 0 -delete
 %{_mandir}/man3/*
 
 %changelog
+* Sun Jul 24 2016 Petr Pisar <ppisar@redhat.com> - 2.161-3
+- Rebuild without bootstrap
+
 * Wed Jul 13 2016 Petr Pisar <ppisar@redhat.com> - 2.161-2
 - SCL
 
