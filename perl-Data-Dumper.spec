@@ -4,7 +4,7 @@
 
 Name:           %{?scl_prefix}perl-Data-Dumper
 Version:        2.174
-Release:        451%{?dist}
+Release:        452%{?dist}
 Summary:        Stringify perl data structures, suitable for printing and eval
 License:        GPL+ or Artistic
 URL:            https://metacpan.org/release/Data-Dumper
@@ -81,6 +81,9 @@ find $RPM_BUILD_ROOT -type f -name '*.bs' -size 0 -delete
 %{_mandir}/man3/*
 
 %changelog
+* Tue Jan 07 2020 Jitka Plesnikova <jplesnik@redhat.com> - 2.174-452
+- Re-rebuild of bootstrapped packages
+
 * Fri Dec 20 2019 Jitka Plesnikova <jplesnik@redhat.com> - 2.174-451
 - SCL
 
